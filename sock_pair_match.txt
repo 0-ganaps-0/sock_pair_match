@@ -1,0 +1,9 @@
+def sock_pair_match(sock_count, sock_list):
+	match_pair=0
+	for itr_1 in range(sock_count-1):
+		for itr_2 in range(itr1+1,sock_count):
+			if sock_list[itr_1]==sock_list[itr_2]:
+				match_pair+=1
+				sock_list.pop(j)
+				sock_count-=1
+	return(match_pair)
